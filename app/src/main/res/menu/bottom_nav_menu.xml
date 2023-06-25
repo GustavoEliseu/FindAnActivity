@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_new_activity"
+        android:icon="@drawable/add_icon_black"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_list_activities"
+        android:icon="@drawable/list_icon_black"
+        android:title="@string/title_notifications" />
+
+</menu>

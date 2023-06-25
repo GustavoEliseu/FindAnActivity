@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ImBored</string>
+
+    <string name="status_in_progress">In Progress</string>
+    <string name="status_done">Done</string>
+    <string name="status_cancelled">Cancelled</string>
+    <string name="status_not_saved">Not saved</string>
+    <string name="url_not_found">Not possible to complete the request</string>
+    <string name="new_activity">New Activity</string>
+    <string name="activity_list">My Activities</string>
+    <string name="participants">Participants:</string>
+    <string name="type">Type:</string>
+    <string name="price">Price:</string>
+    <string name="find_new">find new</string>
+    <string name="add">add</string>
+    <string name="already_exists">Added</string>
+    <string name="save_not_possible">It was not possible to save on the DB</string>
+    <string name="activity_added">Activity added to the list</string>
+    <string name="link">link:</string>
+
+</resources>

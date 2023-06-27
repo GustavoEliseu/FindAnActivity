@@ -1,4 +1,4 @@
-package com.example.findactivity.database
+package com.example.findactivity.data.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -7,8 +7,8 @@ import com.google.gson.annotations.SerializedName
 import com.squareup.moshi.Json
 
 
-@Entity(tableName = "BORED_ACTIVITY")
-data class BoredActEntity(
+@Entity(tableName = "ACTIVITY_TABLE")
+data class ActEntity(
     @PrimaryKey val id: Int? = 0,
     @Json(name = "activity")
     @SerializedName("activity")

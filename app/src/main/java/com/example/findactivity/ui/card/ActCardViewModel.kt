@@ -3,7 +3,7 @@ package com.example.findactivity.ui.card
 import android.view.View
 import androidx.lifecycle.MutableLiveData
 import com.example.findactivity.base.BaseViewModel
-import com.example.findactivity.database.BoredActEntity
+import com.example.findactivity.data.model.ActEntity
 
 class ActCardViewModel(): BaseViewModel() {
 
@@ -16,9 +16,9 @@ class ActCardViewModel(): BaseViewModel() {
     val linkMutableVisibility = MutableLiveData<Int>()
     val activityListMutableVisibility = MutableLiveData<Int>()
     val activityStatusMutableTextColor = MutableLiveData<Int>()
-    var currentAct: BoredActEntity? = null
+    var currentAct: ActEntity? = null
 
-    fun bind(boredAct: BoredActEntity, isFromRandomFragment:Boolean = false) {
+    fun bind(boredAct: ActEntity, isFromRandomFragment:Boolean = false) {
         currentAct = boredAct
         activityTitleMutableText.value = boredAct.boredActivity
         activityParticipantsMutableText.value = boredAct.participants.toString()

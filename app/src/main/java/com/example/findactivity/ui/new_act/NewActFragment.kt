@@ -127,7 +127,6 @@ class NewActFragment : BaseFragment<FragmentNewActBinding,NewActViewModel>() {
                 setFragmentResult(NEW_ACTIVITY_ADDED_REQUEST, bundleOf(NEW_ACTIVITY_ADDED_KEY to it))
                 tempActivity = null
             }
-            onSuccessAlreadyExists(success)
 
         } else {
             Toast.makeText(
@@ -136,5 +135,6 @@ class NewActFragment : BaseFragment<FragmentNewActBinding,NewActViewModel>() {
                 Toast.LENGTH_SHORT
             ).show()
         }
+        onSuccessAlreadyExists(success)
     }
 }

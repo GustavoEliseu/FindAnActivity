@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="com.example.imbored.ui.ActivityCardViewModel" />
+            type="com.example.findactivity.ui.card.ActCardViewModel" />
     </data>
 
         <com.google.android.material.card.MaterialCardView

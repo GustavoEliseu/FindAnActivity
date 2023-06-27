@@ -4,10 +4,10 @@
     <data>
         <variable
             name="viewModel"
-            type="com.example.imbored.ui.random.NewRandomActivityViewModel" />
+            type="com.example.findactivity.ui.new_act.NewActViewModel" />
         <variable
             name="cardViewModel"
-            type="com.example.imbored.ui.ActivityCardViewModel"/>
+            type="com.example.findactivity.ui.card.ActCardViewModel"/>
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

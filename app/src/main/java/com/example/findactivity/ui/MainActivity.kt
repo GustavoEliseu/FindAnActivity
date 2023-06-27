@@ -1,12 +1,11 @@
-package com.example.findactivity
+package com.example.findactivity.ui
 
-import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.findactivity.R
 import com.example.findactivity.base.BaseActivity
 import com.example.findactivity.databinding.ActivityMainBinding
 

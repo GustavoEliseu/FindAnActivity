@@ -23,7 +23,7 @@ class CardListAdapter() : RecyclerView.Adapter<BoredActivityViewHolder>() {
         )
     }
 
-    fun clearAndUpdateAll(list: MutableList<ActEntity>){
+    fun clearAndUpdateAll(list: MutableList<ActEntity>) {
         activitiesList.clear()
         activitiesList = list
         notifyDataSetChanged()
@@ -35,9 +35,11 @@ class CardListAdapter() : RecyclerView.Adapter<BoredActivityViewHolder>() {
 
     override fun getItemCount() = activitiesList.size
 
-    fun addItem(boredActivityEntity: ActEntity){
-        activitiesList.add(boredActivityEntity)
-        notifyItemInserted(activitiesList.lastIndex)
+    fun addItem(boredActivity: ActEntity) {
+        if (!activitiesList.map { it.key }.contains(boredActivity.key)) {
+            activitiesList.add(boredActivity)
+            notifyItemInserted(activitiesList.lastIndex)
+        }
     }
 
     fun clear() {

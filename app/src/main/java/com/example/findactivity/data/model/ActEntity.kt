@@ -5,6 +5,7 @@ import androidx.room.PrimaryKey
 import com.example.findactivity.common.StatusBored
 import com.google.gson.annotations.SerializedName
 import com.squareup.moshi.Json
+import java.io.Serializable
 
 
 @Entity(tableName = "ACTIVITY_TABLE")
@@ -20,5 +21,5 @@ data class ActEntity(
     val key: String,
     val accessibility: String,
     val status: StatusBored? = StatusBored.NOT_SAVED,
-){
+) : Serializable{
 }
